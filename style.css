@@ -1,0 +1,56 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: aqua;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.container > h1{
+    text-align: center;
+}
+
+
+.input-control{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-control.error input{
+   border: 1px solid red;
+}
+
+.input-control.success input{
+    border: 1px solid green;
+ }
+
+
+.input-control > input{
+    outline: none;
+    padding: 7px;
+}
+
+.error{
+    color: red;
+    font-size: 13px;
+}
+
+button{
+    width: 100%;
+    background-color: blue;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+    cursor: pointer;
+}
